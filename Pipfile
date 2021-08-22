@@ -18,6 +18,11 @@ tensorflow = "*"
 transformers = "*"
 torch = "*"
 flair = "*"
+bertviz = "*"
+sklearn = "*"
+nltk = "*"
+sentence-transformers = "*"
+pyyaml = "*"
 
 [dev-packages]
 
