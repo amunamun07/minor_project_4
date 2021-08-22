@@ -4,6 +4,7 @@ import warnings
 import pandas as pd
 from hugging_face.roberta import ModelingRoberta
 from hugging_face.sentence_transformer import ModelingSentenceTransformer
+from numerical_representation.tfidf import TFIDF
 warnings.filterwarnings("ignore")
 
 
@@ -47,5 +48,4 @@ if __name__ == "__main__":
 
     use_sentence_transformer_model(yaml_instance, sentence_corpus)
 
-
-
+    TFIDF.tfidf_cosine_similarity(sentence_corpus)

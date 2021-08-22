@@ -23,6 +23,13 @@ sklearn = "*"
 nltk = "*"
 sentence-transformers = "*"
 pyyaml = "*"
+numpy = "*"
+pandas = "*"
+sklearn = "*"
+tqdm = "*"
+nltk = "==3.2.5"
+sentence-transformers = "==2.0.0"
+transformers = "==4.9.2"
 
 [dev-packages]
 

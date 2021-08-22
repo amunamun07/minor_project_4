@@ -38,7 +38,7 @@ class TFIDF:
         parameters:
         sentence: a list of 2 user input sentences
         """
-        bow_dic = create_dict(sentences)
+        bow_dic = self.create_dict(sentences)
         # Compute sentence term matrix as well idf for each term
         sentence_tf_matrix = np.zeros((len(sentences), len(bow_dic)))
         sentence_idf_matrix = np.zeros((len(bow_dic), len(sentences)))
