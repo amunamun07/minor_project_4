@@ -1,7 +1,8 @@
 
 # Minor_Project_4
 
-The objective for this project is to derive similarity score using but hugging face(Sentence transformer / RoBERTa) models and numerical representation(tfidf).
+The objective for this project is to derive similarity score using hugging face models and numerical representation.
+In this project, we have used Sentence Transformer, Roberta and tfidf.
 
 ### Code Structure
 ```
@@ -41,7 +42,7 @@ The objective for this project is to derive similarity score using but hugging f
 
 ### Folders/files Description:
 #### 1. Notebook
-The Notebooks files were created to quickly view the outputs.
+The Notebooks files are a quick way view the outputs.
 - Contains roberta.ipnyb which is a step by step process of finding probability of any two sentences to be similar(entailment, contradiction and neutral). It also contains description of Transformers and Bert.
 - Contains tf_idf_similarity_score.ipnyb which outputs the similarity score between many sentences in a tabular form. 
 
@@ -53,7 +54,7 @@ The Notebooks files were created to quickly view the outputs.
 - Contains tfidf.py which is a py version of the above mentioned notebook.
 
 #### 4. Config.yaml
-- has global variables,datapaths and dictionaries
+- has global variables, data paths and dictionaries
 
 #### 5. main.py
 - has three functions to use predictions from roberta model, similarity from sentence_transformer and similarity from tfidf.

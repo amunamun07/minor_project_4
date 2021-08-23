@@ -2,3 +2,5 @@
 .idea
 src/.ipynb_checkpoints
 Pipfile.lock
+dataset/
+src/
