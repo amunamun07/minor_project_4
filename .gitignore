@@ -1,0 +1,4 @@
+.ipynb_checkpoints
+.idea
+src/.ipynb_checkpoints
+Pipfile.lock
