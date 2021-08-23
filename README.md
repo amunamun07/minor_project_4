@@ -1,6 +1,7 @@
 # minor_project_4
 
 ### Code Structure
+'''{
 |
 |   .gitignore
 │   config.yaml
@@ -32,4 +33,4 @@
 │
 └───src
         huggingface_similarity.py
-        predictions.py
+        predictions.py}'''
