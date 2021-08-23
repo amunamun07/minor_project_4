@@ -15,10 +15,13 @@ class TFIDF:
         pass
 
     def create_dict(self, sentences: list):
-        """
-        function: to create dictionary (a bag of words) where keys:unique words and values:frequency(words)
-        parameters:
-        sentence: a list of 2 user input sentences
+        """ Creates dictionary (a bag of words) where each words(keys) are unique words and values:frequency(words)
+        
+               Args:
+               sentences: a list of sentences
+                
+               Returns:
+               a dictionary of unique words from sentences
         """
         dic = {}
         for sentence in sentences:
@@ -33,13 +36,16 @@ class TFIDF:
         return dic
 
     def tfidf_cosine_similarity(self, sentences):
-        """
-        function: to compute the cosine similarity score between any two sentences
-        parameters:
-        sentence: a list of 2 user input sentences
+        """ Compute the term frequency and inverse document frequency matrix of given sentences and calculate the cosine similarity score.
+        
+               Args:
+               sentences: a list of sentences
+               
+               Returns:
+               cosine similarity score between sentences
         """
         bow_dic = self.create_dict(sentences)
-        # Compute sentence term matrix as well idf for each term
+        # Compute sentence term frequency matrix as well idf matrix for each term
         sentence_tf_matrix = np.zeros((len(sentences), len(bow_dic)))
         sentence_idf_matrix = np.zeros((len(bow_dic), len(sentences)))
         sentence_term_df = pd.DataFrame(
