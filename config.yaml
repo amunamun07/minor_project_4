@@ -1,12 +1,11 @@
+testing_dataset_path: "dataset/snli_testing.csv"
 
-testing_dataset_path: 'dataset/snli_testing.csv'
-
-roberta_model_name: 'ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli'
-bert_model_name: 'bert-large-cased'
-sentence_transformer_model_name: 'paraphrase-MiniLM-L12-v2'
+roberta_model_name: "ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli"
+bert_model_name: "bert-large-cased"
+sentence_transformer_model_name: "paraphrase-MiniLM-L12-v2"
 
 label_mapping: {
-    0: 'entailment',
-    1: 'neutral',
-    2: 'contradiction',
+    0: "entailment",
+    1: "neutral",
+    2: "contradiction",
 }
